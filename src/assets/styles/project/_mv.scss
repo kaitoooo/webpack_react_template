@@ -1,0 +1,16 @@
+@use '../global/global' as g;
+
+.mv {
+    h1 {
+        color: g.$color-red;
+        // font-size: g.get_vw(128);
+        // font-size: g.get_per(128, 1040);
+        @include g.fluid-type(font-size, 30px, 84px);
+        margin: g.strip_lh_fluid(14, 7px, 17px, 1.5, 201) 0 0;
+
+        z-index: map-get(g.$z, header);
+        @include g.mq(mobile) {
+            font-size: g.get_vw(128);
+        }
+    }
+}
