@@ -117,7 +117,7 @@ module.exports = {
                 },
                 {
                     from: path.resolve(config.assets, 'static'),
-                    to: path.resolve(config.dist, 'static'),
+                    to: path.resolve(config.dist, ''),
                     toType: 'dir',
                     globOptions: {
                         ignore: ['*.DS_Store', '**/.gitkeep'],
